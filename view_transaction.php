@@ -108,6 +108,11 @@ if(!isset($_SESSION['user_id'])){
 </tr>
 
 <tr>
+<th>صادرة - واردة</th>
+<td><?= $row['transaction_type']; ?></td>
+</tr>
+
+<tr>
 <th>الجهة</th>
 <td><?= $row['sender']; ?></td>
 </tr>

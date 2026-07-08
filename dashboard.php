@@ -189,6 +189,8 @@ if(!isset($_SESSION['user_id'])){
 
                 <th>الموضوع</th>
 
+                <th>صادرة - واردة</th>
+                
                 <th>الجهة</th>
 
                 <th>التاريخ</th>
@@ -209,6 +211,8 @@ if(!isset($_SESSION['user_id'])){
          <td><?= $row['transaction_number']; ?></td>
 
          <td><?= $row['subject']; ?></td>
+
+         <td><?= $row['transaction_type']; ?></td>
 
          <td><?= $row['sender']; ?></td>
 

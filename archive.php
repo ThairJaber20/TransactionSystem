@@ -124,7 +124,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     <th>ID</th>
      <th>رقم المعاملة</th>
      <th>الموضوع</th>
-              
+     <th>صادرة - واردة</th>         
      <th>الجهة</th>
      <th>الحالة</th>
      <th>التاريخ</th>
@@ -135,6 +135,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
      <td><?= $row['id']; ?></td>
      <td><?= $row['transaction_number']; ?></td>
      <td><?= $row['subject']; ?></td>
+     <td><?= $row['transaction_type']; ?></td>
      <td><?= $row['sender']; ?></td>
      <td><?= $row['status']; ?></td>
      <td><?= $row['transaction_date']; ?></td>

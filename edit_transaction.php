@@ -14,12 +14,14 @@ if(isset($_POST['update'])){
 
     $number  = $_POST['transaction_number'];
     $subject = $_POST['subject'];
+    $transaction_type = $_POST['transaction_type'];
     $sender  = $_POST['sender'];
     $status  = $_POST['status'];
 
     $sql = "UPDATE transactions SET
             transaction_number='$number',
             subject='$subject',
+            transaction_type='$transaction_type',
             sender='$sender',
             status='$status'
             WHERE id='$id'";
@@ -128,9 +130,21 @@ value="<?= $row['subject']; ?>" required>
 </div>
 
 <div class="form-group">
+<label>صادرة - واردة</label>
+<input type="text" name="transaction_type"
+value="<?= $row['transaction_type']; ?>" required>
+</div>
+
+<div class="form-group">
 <label>الجهة</label>
 <input type="text" name="sender"
 value="<?= $row['sender']; ?>" required>
+</div>
+
+<div class="form-group">
+<label>تاريخ المعاملة</label>
+<input type="date" name="transaction_date"
+value="<?= $row['transaction_date']; ?>" required>
 </div>
 
 <div class="form-group">

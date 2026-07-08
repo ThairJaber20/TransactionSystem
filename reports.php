@@ -42,7 +42,7 @@ $result = mysqli_query($conn,"SELECT * FROM transactions ORDER BY transaction_da
  <div class="sidebar">
 
      <div class="logo">
-     <h2>إدارة المعاملات</h2>
+     <img src="assets/images/logo.jpg" alt="شعار الوزارة">
      </div>
 
      <ul>
